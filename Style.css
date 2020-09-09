@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+}
+.container{
+	display: grid;
+	width: 90%;
+	margin: 5px auto;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	"header header header header"
+	"box-1 box-2 box-2 box-3"	
+	"content content content sidebar"
+	"footer footer footer footer";
+	gap: 2%;
+}
+
+.header,
+.box1,
+.box2,
+.box3,
+.content,
+.sidebar,
+footer,
+.footer1,
+.footer2,
+.footer3,
+.footer4{
+	border: 1px solid black;
+	height: 100px;
+}
+.header{
+	grid-area: header;
+}
+.box1{
+	grid-area: box-1;
+	justify-self: start;
+	width: 62%;
+}
+.box2{
+	grid-area: box-2;
+	justify-self: center;
+	width: 134%;
+
+}
+.box3{
+	grid-area: box-3;
+	justify-self: end;
+	width: 62%;
+}
+.content{
+	grid-area: content;
+}
+.sidebar{
+	grid-area: sidebar;
+}
+footer{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-area: footer;
+	height: auto;
+	padding: 5px;
+
+	gap: 2%;	
+}
+.footer1
+.footer2
+.footer3
+.footer4{
+	margin: 5px 0;
+}
+
+@media screen and (max-width: 1200px);
+
+
+	
