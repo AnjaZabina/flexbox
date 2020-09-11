@@ -9,7 +9,7 @@ body {
 .container{
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(4, 1fr);
 	grid-template-areas:
 	"header header header header header header header header header header header header"
 	"box-1 box-1 box-2 box-2 box-2 box-2 box-2 box-2 box-2 box-2 box-3 box-3"	
@@ -83,7 +83,7 @@ footer{
 	.container{
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: repeat(4, 1fr);
 		grid-template-areas:
 		"header header header header header header header header header header header header"
 		"box-1 box-1 box-1 box-2 box-2 box-2 box-2 box-2 box-2 box-3 box-3 box-3"	
@@ -116,7 +116,7 @@ footer{
 					"footer3 footer4";
 		            padding: 5px;
 					margin-bottom: 5px;
-					gap: 0;
+					row-gap: 5px;
 	}
 }
 	
@@ -147,7 +147,7 @@ footer{
 							"footer2"
 							"footer3"
 							"footer4";
-							gap: 0;	
+							row-gap: 5px;
 							padding: 5px;	
 						 }	
 						
